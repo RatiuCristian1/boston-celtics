@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(77, 79, 83);
+
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(71, 114, 75);
+
+}
+
+#logo {
+    float: left;
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+#menu {
+    font-size: 100%;
+    list-style-type: none;
+    letter-spacing: 2px;
+    margin-right: 20px;
+}
+#logo, #menu {
+    line-height: 75px;
+    padding-left: 15px;
+    text-decoration: none;
+}
+
+
+#menu li {
+    float: right;
+    margin-right: 10px; 
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;    
+}
+
+#menu a:hover {
+    border-bottom: 1px solid black;
+}
+
+.active {
+    border-bottom: 1px solid black;
+}
+
+#hero-image {
+    height: 450px;
+    width: 100%;
+    background: url("https://multi-canvas-art.com/wp-content/uploads/2020/03/Boston-Celtics-Logo-3.jpg") no-repeat center center;
+    background-size: cover;
+
+    animation-name: hero-zoom;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+#hero-outer {
+    height: 450px;
+    width: 100%;
+    overflow: hidden;
+}
+
+@keyframes hero-zoom {
+    from {
+     transform: scale(1);
+    }
+    to {
+     transform: scale(1.1);
+    }
+}
+
+#left-about {
+    padding-top: 30px;
+    width: 33%;
+    float: left;
+    
+}
+
+#right-about {
+    padding-top: 30px;
+    width: 33%;
+    float: right;
+    
+}
+
+#center-about {
+    width: 33%;
+    margin:0 auto;
+    
+}
+hr {
+    border-top: 1px solid black;
+    width: 100%;
+    margin: 5px 0;
+
+}
+
+.left-about-heading {
+    width: 50%;
+    float: right;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
+
+.right-about-heading {
+    width: 50%;
+    float: left;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 60px;
+}
+
+.right-about-heading h2 {
+    text-align: right;
+}
+
+.right-about-heading p {
+    text-align: right;
+}
+
+#club-ethos {
+    width: 100%;
+    height: 450px;
+}
+
+
+#welcome {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 280%;   
+
+}
+
+#circle-container{
+    width: 300px;
+    height: 300px;
+    padding: 15px;
+    border-style: solid;
+    border-color: rgb(211, 203, 203);
+    border-width: 1px;
+    border-radius: 50%;
+    margin:0 auto;
+}
+
+#circle-cover-bg {
+    background: url("https://www.nba.com/celtics/sites/celtics/files/20200531-protests-1200x550.jpg?cw=700&ch=500&w=1091&h=500&x=196&y=0") no-repeat center center;
+    height: 100%;
+    border-radius: 50%;
+    
+}
+#bottom-banner {
+    background-image: url("https://cdn.dribbble.com/users/51266/screenshots/14249889/media/a04a3c6f31fdc7bbe88c520ac93e52cf.png?compress=1&resize=400x300");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 225px;
+    overflow: hidden;
+
+}
+
+}
+
+#photo {
+    clear: both;
+    text-align: center;
+    width: 100%;
+    
+    
+    
+}
+
+@media screen and (max-width: 1393px) {
+    #club-ethos {
+        width: 65%;
+        height: 1200px;
+        margin:0 auto;
+     }
+
+    #welcome {
+        padding:30px 0;
+        margin-top: 0;
+     }
+
+    #left-about, #right-about {
+        width: 100%;
+        float: left;
+        padding: 0;
+     }
+
+    #center-about {
+        clear: both;
+        width: 100%;
+        float: left;
+        padding: 0;
+        padding-top: 30px;
+        
+     }
+
+    hr{
+        display: none;
+     }
+    }
+
+    @media screen and (max-width: 943px){
+        #menu {
+            clear: left;
+            float: left;
+            margin-left: 30px;
+            margin-bottom: 20px;
+            line-height: 25px;
+        }
+
+        #club-ethos {
+            width: 90%;
+            height: 1200px;
+            margin:0 auto;
+        }
+
+        .left-about-heading, .right-about-heading {
+            width: inherit;
+        }
+
+        .left-about-heading h2, .right-about-heading h2 {
+            width: 100%;
+            text-align: center;
+        }
+        
+        .left-about-heading p, .right-about-heading p {
+            text-align: center;
+            padding: 0 20px 0 20px;
+        }
+        #photo {
+            width: 100%;
+            padding-top: 25px;
+        }
+    }
+    @media screen and (max-width: 800px){
+        #photo {
+            width: 100%;
+            
+        }        
+    }
+    footer{
+        height: 75px;
+    }
+    
+    .social-networks{
+       text-align: center;
+       
+    }
+    
+    .social-networks li {
+       display:inline;
+    }
+    
+    .social-networks i {
+        font-size: 160%;
+        margin: 1%;
+        padding: 5%;
+        color: #777777;
+    }
+    
+    #photo img{
+        width: 100%;
+    }
+    
+    
+    
+
+    
+
