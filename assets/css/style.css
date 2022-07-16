@@ -253,29 +253,38 @@ hr {
             
         }        
     }
-    footer{
-        height: 75px;
-    }
     
-    .social-networks{
-       text-align: center;
-       
-    }
-    
-    .social-networks li {
-       display:inline;
-    }
-    
-    .social-networks i {
-        font-size: 160%;
-        margin: 1%;
-        padding: 5%;
-        color: #777777;
-    }
     
     #photo img{
         width: 100%;
     }
+
+    footer{
+        height: 100px;
+    }
+    
+    .social-networks{
+        text-align: center;
+        margin-top: 25px;
+        
+    
+    }
+    .social-networks li{
+        display: inline;
+        font-size: 25px;
+        
+    }
+    .social-networks a {
+        color: green;
+    }
+
+    h3 {
+        text-align: center;
+        color: rgb(139, 247, 107);
+        padding-bottom: 5px;
+    }
+    
+    
     
     
     
